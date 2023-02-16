@@ -41,13 +41,14 @@
 }
 
 .space{
-    height: 80px;
+    height: 120px;
    }
 
 
 .box {
 	display: flex;
     align-items: center;
+	
 }
 
 .box .inner {
@@ -94,3 +95,195 @@
 		left: -100%;
 	}
 }
+
+
+/* projects section */
+
+
+
+
+.project-heading{
+	
+    font-size: 50px;
+    background: #175153;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #00b7cf;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+}
+
+.project-card{
+    height: 300px;
+    position: relative;
+}
+
+.project-img{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.project-content{
+    position: relative;
+    padding: 40px;
+    color: #fff;
+    transition: .5s;
+    opacity: 0;
+	border: 15px solid green;
+}
+
+.project-title{
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 300;
+}
+
+.project-info{
+    margin: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.project-btn-grp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.project-btn{
+    height: 40px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.project-btn.live{
+    background: none;
+    border: 2px solid #fff;
+}
+
+.project-img{
+    filter: blur(20px);
+}
+.project-content{
+    opacity: 1;
+}
+
+
+.contact-section.active{
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+}
+
+
+*,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: hsl(210 30% 24%);
+}
+
+h1 {
+  font-size: 60px;
+  font-family: sans-serif;
+  color: hsl(0 0% 98%);
+  text-align: center;
+}
+
+.underlined {
+/*   background: red; */
+  position: relative;
+}
+
+.underline-mask:after {
+  content: '';
+  position: absolute;
+  top: 95%;
+  width: 150%;
+  aspect-ratio: 3 / 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 6px solid hsl(280 80% 50%);
+  /* Use a conic gradient mask to hide and show the bits you want */
+  --spread: 140deg;
+  --start: 290deg;
+  mask: conic-gradient(from var(--start), white 0 var(--spread), transparent var(--spread));
+}
+
+
+.underline-overflow {
+  display: inline-block;
+  /* A little extra padding and overflow hidden   */
+  overflow: hidden;
+  padding-bottom: clamp(1rem, 2vmin, 2rem);
+}
+.underline-overflow:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  height: 150%;
+  aspect-ratio: 2.5 / 1;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  border-radius: 50%;
+  border: 6px solid hsl(10 80% 50%);
+}
+
+
+  
+button {
+    --c:  #229091; /* the color*/
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
+
+ 
+
+  
+ 
+  
+
+  
