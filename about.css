@@ -48,6 +48,9 @@
 .box {
 	display: flex;
     align-items: center;
+    margin-left: 210px;
+	
+
 	
 }
 
