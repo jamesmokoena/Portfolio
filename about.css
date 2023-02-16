@@ -14,10 +14,24 @@
   
 }
 
+.spacing{
+ height: 150px;
+}
+
+.space{
+    height: 120px;
+   }
+
+   .spac{
+    height: 50px;
+   }  
+
+
+ /* donwload cv */
 
 
 .download-cv-btn{
-    position: absolute;
+
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -25,25 +39,15 @@
     color: #fff;
     border: none;
     font-size: 16px;
-    text-transform: capitalize;
     cursor: pointer;
     transition: .5s;
     background: rgba(0, 0, 0, 0.5);
+
 }
 
 .download-cv-btn:hover{
     background: #000;
-}
-
-
-.spacing{
- height: 180px;
-}
-
-.space{
-    height: 120px;
-   }
-
+}  
 
 .box {
 	display: flex;
@@ -195,6 +199,7 @@
     position: relative;
     opacity: 1;
     z-index: 8;
+	
 }
 
 
