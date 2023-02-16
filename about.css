@@ -1,0 +1,96 @@
+.about-img-container{
+   
+    position: center;
+    text-align: center;
+}
+
+.about-info{
+    color: #cac6c6;
+    font-weight: bold;
+    opacity: 0.6;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+  
+}
+
+
+
+.download-cv-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.download-cv-btn:hover{
+    background: #000;
+}
+
+
+.spacing{
+ height: 180px;
+}
+
+.space{
+    height: 80px;
+   }
+
+
+.box {
+	display: flex;
+    align-items: center;
+}
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: rgb(28, 126, 133);
+	color: rgb(218, 57, 57);
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: rgb(64, 95, 92);
+	color: rgb(128, 182, 199);
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
